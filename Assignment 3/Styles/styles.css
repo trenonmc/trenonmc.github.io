@@ -1,0 +1,399 @@
+/*HEADER*/
+.headerGrid {
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.1fr 0.2fr;
+
+}
+
+.headerLogo {
+
+}
+
+.headerEmpty {
+
+}
+
+.headerMenu {
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+
+
+/*HEADER MENU*/
+.mobileLinks {
+    grid-column: span 2;
+    animation: appear 1s;
+}
+
+.mobileLinks a {
+    display: block;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+.mobileLinks a:hover {
+    background-color: rgb(224, 224, 224);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    display: none;
+    padding: 10px;
+    width: 110px;
+    height: 50px;
+    border-radius: 0px;
+    border: 4px rgb(0, 0, 0);
+    background-color: white;
+    transition: color 0.5s, background 0.5s, border 0.5s, padding 0.5s;
+}
+
+.buttonFont {
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen {
+
+    .content {
+        padding-top: 100px;
+    }
+    header {
+        grid-template-columns: 1fr auto;
+        position: fixed;
+        width: 100%;
+    }
+    button {
+        display: block;
+    }
+    .desktopLinks {
+        display: none;
+    }
+}
+
+/*BODY LOGO*/
+.bodyBlank {
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: 0.1fr 0.2fr;
+}
+
+.bodyGrid1 {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+    background-color: white;
+    box-shadow: 1px 8px 10px 1px rgba(151, 151, 151, 0.123);
+}
+
+.bodyMessage {
+    text-align: center;
+    font-size: 30px;
+}
+
+.bodyTitle {
+    text-align: center;
+}
+
+.bodyLogo {
+    margin: auto;
+}
+
+.logoImage {
+    animation: spinny 5s linear infinite;
+}
+
+.logoImage:hover {
+    animation-play-state: paused;
+}
+
+
+@keyframes spinny {
+    0% {
+      transform: rotate(0deg);
+    }
+    33% {
+
+    }
+    66% {
+  
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+/*GALLERY*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr 30px 1fr 30px 1fr 30px;
+    background-color: white;
+}
+.galleryPic {
+    margin: auto;
+}
+
+.gallery div {
+    overflow: hidden;
+}
+
+img {
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.zoom {
+    transform: scale(1.2);
+}
+
+/*BODY CONTENT*/
+.bodyGrid2 {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+}
+
+.bodyBoxes {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    background: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr;
+    padding: 20px;
+}
+.bodyBoxes:hover {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    color: white;
+    background-color: black;
+    box-shadow: 1px 8px 10px 1px rgba(0, 0, 0, 0.486);
+    padding: 22px;
+}
+
+.bodyBoxesTitle {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.bodyBoxesText {
+    text-align: center;
+    color: white;
+}
+
+/*FOOTER*/
+
+footer {
+    margin-top: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+}
+
+.footerContent {
+    padding: 10px;
+}
+
+
+.socials {
+
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+
+  }
+
+.socials:hover {
+    background-color: rgb(224, 224, 224);
+    color: black;
+    box-shadow: 0 0px 15px 0 rgba(0,0,0,0.24);
+}
+
+.socialplacement {
+    word-spacing: 0.5em;
+    float: right;
+}
+
+
+/*PROJECTS TITLE*/
+.bodyGridTwo {
+    height: 12vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+    background-color: white;
+    box-shadow: 1px 8px 10px 1px rgba(151, 151, 151, 0.123);
+}
+
+.projectsTitle {
+    text-align: center;
+    font-size: 50px;
+}
+
+/*GALLERY 2*/
+.gallerytwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr 1px;
+}
+.galleryPictwo {
+    margin: auto;
+}
+
+.gallerytwo div {
+    overflow: hidden;
+}
+
+/*GALLERY 3*/
+.gallerythree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr 1px;
+    background-color: white;
+}
+.galleryPicthree {
+    margin: auto;
+}
+
+.gallerythree div {
+    overflow: hidden;
+}
+
+/*GALLERY 4*/
+.galleryfour {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 1fr 1px;
+    background-color: white;
+}
+.galleryPicfour {
+    margin: auto;
+}
+
+.galleryfour div {
+    overflow: hidden;
+}
+
+/*ABOUT*/
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 30px 1fr 30px;
+}
+
+.aboutImage {
+    margin: auto;
+    margin-left: 150px;
+}
+
+.h1 {
+    font-size: 40px;
+}
+
+.p {
+    padding-right: 30%;
+    font-size: 19px;
+}
+
+.touchButtons {
+    width: 20px;
+    height: 10px;
+    background-color: teal;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.meet {
+    background-color: teal;
+    margin: auto;
+}
+
+.socialstwo {
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+
+  }
+  .socialsthree {
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+
+  }
+
+.socialstwo:hover {
+    background-color: rgb(224, 224, 224);
+    color: black;
+    box-shadow: 0 0px 15px 0 rgba(0,0,0,0.24);
+}
+
+.meetText {
+    text-align: center;
+    font-size: 30px;
+}
+
+main {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'Roboto', sans-serif;
+}
